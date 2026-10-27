@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#030a18">
+<meta name="description" content="音黎资源网官方下载页 —— 免费资源分享与安卓玩机平台安卓版安装包获取入口。">
+<meta name="referrer" content="no-referrer">
+<title>音黎资源网 · 官方下载</title>
+<link rel="icon" href="assets/logo/yinli.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ═══════ 背景舞台（Canvas 星尘 + 网格 + 扫描线，零 CDN） ═══════ -->
+<div id="bg-stage" aria-hidden="true">
+  <canvas id="fx-canvas"></canvas>
+  <div class="bg-grid"></div>
+  <div class="bg-vignette"></div>
+  <div class="scanlines"></div>
+</div>
+
+<!-- ═══════ 顶栏 ═══════ -->
+<header id="topbar">
+  <div class="tb-inner">
+    <div class="tb-row1">
+      <span class="tb-logo"><img src="assets/logo/yinli.png" alt="音黎资源网" onerror="this.parentNode.classList.add('noimg')"></span>
+      <span class="tb-name">音黎资源网</span>
+      <span class="tb-tag mono">OFFICIAL APK</span>
+    </div>
+    <div class="tb-clock mono" id="clock">0000-00-00 00:00:00 星期一</div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-orbit" aria-hidden="true">
+      <svg viewBox="0 0 600 600"><circle cx="300" cy="300" r="238" class="o1"/><circle cx="300" cy="300" r="288" class="o2"/></svg>
+    </div>
+    <div class="chip mono hero-badge"><span class="chip-dot"></span>YINLI OS · 官方分发节点 ONLINE</div>
+    <h1 class="glitch" data-text="音黎资源网">音黎资源网</h1>
+    <p class="hero-sub">一个集成了免费资源分享与安卓玩机的强大平台</p>
+    <div class="hero-chips">
+      <span class="chip"><i class="ic"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10V6z"/></svg></i> 官方正版 · 无捆绑</span>
+      <span class="chip"><i class="ic"><svg viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg></i> 永久免费 · 无套路</span>
+      <span class="chip"><i class="ic"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 5h-2v6l5 3 1-1.7-4-2.3z"/></svg></i> 即装即用 · 轻量极速</span>
+    </div>
+    <div class="plat-hint mono" id="plat-hint" hidden>⚠ 检测到非安卓设备 · 该安装包仅适用于 Android 系统</div>
+
+    <!-- 下载按钮 -->
+    <button id="btn-dl" class="btn-dl" type="button" data-state="idle">
+      <span class="dl-ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 3v10.2l3.6-3.6L17 11l-5 5-5-5 1.4-1.4L12 13.2V3zM5 19h14v2H5z"/></svg>
+      </span>
+      <span class="dl-txt">下载音黎资源网</span>
+      <span class="dl-sub mono">ANDROID · APK · v3.1.4</span>
+      <span class="btn-sheen"></span>
+      <span class="dl-bar" aria-hidden="true"><i></i></span>
+    </button>
+    <div class="dl-manual">
+      若点击后未开始下载，请
+      <a id="manual-link" href="https://h1052.lanosso.com/8ce8fcc48852b0a8c78be5061de5eea4/6ae08ce8/2026/10/27/41c757051e3bffca0f323a57989cafe1.apk?fn=%E9%9F%B3%E9%BB%8E%E8%B5%84%E6%BA%90%E7%BD%91_%E9%9F%B3%E9%BB%8E%E5%88%B6%E4%BD%9C.apk" target="_blank" rel="noopener">点此手动下载</a>
+    </div>
+
+    <!-- 跑马灯 -->
+    <div class="ticker mono" aria-hidden="true"><div class="ticker-track" id="ticker-track"></div></div>
+  </section>
+
+  <!-- 安装指引 -->
+  <section class="steps hud-corners">
+    <div class="steps-head mono">&gt; cat ./install_guide --android<span class="caret"></span></div>
+    <ol>
+      <li><b class="mono">01</b><span>点击上方按钮拉取安装包 <i class="mono">音黎资源网_音黎制作.apk</i>；</span></li>
+      <li><b class="mono">02</b><span>下载完成后打开通知栏 / 文件管理中的安装包；</span></li>
+      <li><b class="mono">03</b><span>系统提示时允许「安装未知应用」，即可完成安装。</span></li>
+    </ol>
+    <div class="steps-safe mono"><i class="led"></i> 本站仅此一个官方分发地址 · 其余渠道均为盗版 · 请勿相信收费行为</div>
+  </section>
+
+</main>
+
+<!-- ═══════ 页脚 ═══════ -->
+<footer id="footer">
+  <div class="ft-line"></div>
+  <div class="ft-grid">
+    <div class="ft-brand">
+      <span class="tb-logo"><img src="assets/logo/yinli.png" alt="音黎资源网" onerror="this.parentNode.classList.add('noimg')"></span>
+      <div><b>音黎资源网</b><span class="mono ft-sub">FREE · OPEN · YINLI OS</span></div>
+    </div>
+    <div class="ft-links">
+      <a href="https://v.douyin.com/GP4o6CkFDY8/" target="_blank" rel="noopener">唯一官方渠道</a>
+    </div>
+  </div>
+  <div class="ft-copy mono">2026 © 音黎资源网 · 站长 @音YINLI黎 · 技术无罪，使用有责</div>
+</footer>
+
+<div id="toast-wrap" aria-live="polite"></div>
+<noscript>
+  <div style="position:fixed;inset:0;z-index:999;display:flex;align-items:center;justify-content:center;background:#0b1526;color:#dbeafe;font-family:monospace;font-size:14px;line-height:2;text-align:center;padding:24px;">
+    本页需要启用 JavaScript。<br>亦可直接手动下载：<br>https://h1052.lanosso.com/8ce8fcc48852b0a8c78be5061de5eea4/6ae08ce8/2026/10/27/41c757051e3bffca0f323a57989cafe1.apk
+  </div>
+</noscript>
+
+<script src="script.js"></script>
+</body>
+</html>
