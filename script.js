@@ -6,7 +6,7 @@
 (function () {
 
   /* ────────── 配置 ────────── */
-  var APK_URL = 'https://h1052.lanosso.com/8ce8fcc48852b0a8c78be5061de5eea4/6ae08ce8/2026/10/27/41c757051e3bffca0f323a57989cafe1.apk?fn=%E9%9F%B3%E9%BB%8E%E8%B5%84%E6%BA%90%E7%BD%91_%E9%9F%B3%E9%BB%8E%E5%88%B6%E4%BD%9C.apk';
+  var APK_URL = 'https://github.com/yinli2324/YINLI-Resource-Network/releases/download/1.0.0/YINLI-ZYW.apk';
   var APK_NAME = '音黎资源网_音黎制作.apk';
 
   function $(s) { return document.querySelector(s); }
